@@ -108,7 +108,7 @@ class MessagesController extends Controller
             // allowed extensions
             $allowed_images = Chatify::getAllowedImages();
             $allowed_files  = Chatify::getAllowedFiles();
-            $allowed        = array_merge($allowed_images, $allowed_files);
+            $allowed  = array_merge($allowed_images, $allowed_files);
 
             $file = $request->file('file');
             // check file size

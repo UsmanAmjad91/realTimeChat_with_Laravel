@@ -22,7 +22,7 @@ use Illuminate\Support\Arr;
 class UserController extends Controller
 {
     public function logout(Request $request){
-        Auth::logout();
+         Auth::logout();
         return redirect(route('login'));
     }
 

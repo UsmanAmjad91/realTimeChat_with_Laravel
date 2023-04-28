@@ -38,7 +38,9 @@
                   {{-- <div class="app-modal-header">Update your profile settings</div> --}}
                   <div class="app-modal-body">
                       {{-- Udate profile avatar --}}
+                      {{ asset("storage/users-avatar/".auth()->user()->avatar) }}
                       <div class="avatar av-l upload-avatar-preview chatify-d-flex"
+
                       style="background-image: url('{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}');"
                       ></div>
                       <p class="upload-avatar-details"></p>
